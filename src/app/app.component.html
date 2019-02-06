@@ -18,10 +18,30 @@
    
   <div class="card"  *ngIf="changeShow" >
       <div align="center" *ngFor="let temp of resultTemp">
-      <img class="card-img-top" *ngIf=" temp.icon == '5' " src="assets/img/chuva.jpg"  alt="Chuva">
-      <img class="card-img-top" *ngIf=" temp.icon == '2r'" src="assets/img/Muitas nuves.jpg"  alt="Muitas nuvens">
-      <img class="card-img-top" *ngIf=" temp.icon == '3'" src="assets/img/sum.jpg"  alt="Céu aberto">
+      <img class="card-img-top" *ngIf=" temp.icon == '1' " src="assets/img/1.jpg" />
+      <img class="card-img-top" *ngIf=" temp.icon == '1n'" src="assets/img/1n.jpg"  />
+      <img class="card-img-top" *ngIf=" temp.icon == '2'" src="assets/img/2.jpg"  />
+      <img class="card-img-top" *ngIf=" temp.icon == '2n'" src="assets/img/2n.jpg"  />
+      <img class="card-img-top" *ngIf=" temp.icon == '2r'" src="assets/img/2r.jpg" />
+      <img class="card-img-top" *ngIf=" temp.icon == '2rn'" src="assets/img/2rn.jpg"  />
 
+      <img class="card-img-top" *ngIf=" temp.icon == '3'" src="assets/img/3.jpg"  />
+      <img class="card-img-top" *ngIf=" temp.icon == '3n'" src="assets/img/3n.jpg" />
+      <img class="card-img-top" *ngIf=" temp.icon == '3tmn'" src="assets/img/3tm.jpg" />
+      <img class="card-img-top" *ngIf=" temp.icon == '4'" src="assets/img/4.jpg"  />
+      <img class="card-img-top" *ngIf=" temp.icon == '4n'" src="assets/img/4n.jpg" />
+      <img class="card-img-top" *ngIf=" temp.icon == '4r'" src="assets/img/4r.jpg"  />
+      <img class="card-img-top" *ngIf=" temp.icon== '4rn'" src="assets/img/4rn.jpg"  />
+      <img class="card-img-top" *ngIf=" temp.icon == '5'" src="assets/img/5.jpg"  />
+      <img class="card-img-top" *ngIf=" temp.icon == '5n'" src="assets/img/5n.jpg"  />
+      <img class="card-img-top" *ngIf=" temp.icon == '6'" src="assets/img/6.jpg"  />
+      <img class="card-img-top" *ngIf=" temp.icon == '6n'" src="assets/img/6n.jpg"  />
+      <img class="card-img-top" *ngIf=" temp.icon == '7'" src="assets/img/7.jpg"  />
+      <img class="card-img-top" *ngIf=" temp.icon == '7n'" src="assets/img/7n.jpg"  />
+      <img class="card-img-top" *ngIf=" temp.icon == '8'" src="assets/img/8.jpg"  />
+      <img class="card-img-top" *ngIf=" temp.icon == '8n'" src="assets/img/8n.jpg"  />
+      <img class="card-img-top" *ngIf=" temp.icon == '9'" src="assets/img/9.jpg"  />
+      <img class="card-img-top" *ngIf=" temp.icon == '9n'" src="assets/img/9n.jpg"  />
       <div class="card-body">
         <h5 class="card-title"><span *ngIf="temp.temperature > 25;else tem">Temperatura:&nbsp;<span style="color: brown">{{temp.temperature}}ºC</span></span></h5>
        <ng-template #tem> <h5 class="card-title" >Temperatura:&nbsp;<span style="color:mediumblue">{{temp.temperature}}ºC</span></h5></ng-template>
